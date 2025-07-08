@@ -1,0 +1,100 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000000; /* Website background set to black */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        .main-container {
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+            max-width: 1400px; /* Wider container for more content */
+            width: 100%;
+        }
+        h1 {
+            color: #2c3e50; /* Darker heading */
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-size: 2.8rem;
+        }
+        .card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 1.5rem;
+        }
+        .card-header {
+            background-color: #007bff; /* Primary blue for headers */
+            color: white;
+            font-weight: 600;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            padding: 0.75rem 1.25rem;
+            font-size: 1.1rem;
+        }
+        .card-body {
+            padding: 1.25rem;
+        }
+        canvas {
+            border-radius: 1rem;
+            border: 2px solid #dee2e6; /* Light grey border */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            width: 100%; /* Responsive width */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 640px; /* Max width for canvas */
+            display: block; /* Remove extra space below canvas */
+            margin: 0 auto; /* Center canvas */
+        }
+        #keypoint-info-list {
+            max-height: 600px; /* Max height for scrollable keypoint list */
+            overflow-y: auto;
+            background-color: #f8f9fa; /* Light background for list */
+            border-radius: 0.75rem;
+            padding: 1rem;
+            border: 1px solid #e9ecef;
+        }
+        .keypoint-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #e9ecef;
+            transition: background-color 0.2s ease; /* Smooth transition for hover */
+        }
+        .keypoint-item:hover {
+            background-color: #e2f3ff; /* Light blue on hover */
+        }
+        .keypoint-item:last-child {
+            border-bottom: none;
+        }
+        .keypoint-name {
+            font-weight: 600;
+            color: #343a40;
+        }
+        .keypoint-coords, .keypoint-confidence {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .keypoint-confidence {
+            font-weight: 500; /* Slightly bolder for confidence */
+            color: #007bff; /* Blue color for confidence score */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 767.98px) {
+            .main-container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .card {
+                margin-bottom: 1rem;
+            }
+            #keypoint-info-list {
+                max-height: 300px; /* Shorter on small screens */
+            }
+        }
+    
