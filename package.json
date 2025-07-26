@@ -1,17 +1,19 @@
 {
-   "engines":{
-    "node":"22.13.1"
-  },
-  "name": "hand",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "path": "^0.12.7"
-  }
+   "engines": {
+      "node": "22.13.1"
+   },
+   "name": "hand",
+   "version": "1.0.0",
+   "main": "server.js",
+   "scripts": {
+  "start": "node server.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+   "author": "",
+   "license": "ISC",
+   "description": "",
+   "dependencies": {
+      "express": "^5.1.0",
+      "path": "^0.12.7"
+   }
 }
